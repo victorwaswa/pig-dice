@@ -1,3 +1,6 @@
+body{
+    background-image: url("http://hdpixl.com/wp-content/uploads/2017/07/Abstract-Dice-HD-Wallpapers-1920x1080-1024x576.jpg");
+}
 .row1{
     margin-left: 80%;
     font-family: 'Knewave', cursive;
@@ -6,7 +9,7 @@
 }
 .row2{
     margin-left: 5%;
-    margin-top: -5%;
+    margin-top: -4%;
     font-family: 'Knewave', cursive;
     font-family: 'Tangerine', cursive;
     font-family: 'Bungee Inline', cursive;
