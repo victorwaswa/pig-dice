@@ -1,82 +1,65 @@
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <title>Pig-dice</title>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-            <link href="css/style.css" rel="stylesheet" type="text/css">
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-            <script src ="js/scripts.js"></script>
-            <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Knewave|Tangerine" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css?family=Knewave|Tangerine" rel="stylesheet">
-        </head>
-        <body>
-            <div class="row1">
-                <a href="History.html"> HISTORY</a>
-                </div>
-                <div class="row2">
-                    <a href="instructions.html">Instructions</a>
-                </div>
-                <div class="row">
-                    <div class="col-md-3" id="player-col">
-                    <form id="players">
-                        <div class="form-group">
-                            <label for="player1">Enter your Name</label>
-                            <input type="text" class="form-control" id="player1" placeholder="player 1" required/>
-                     </div>
-            <div class="form-group">
-                 <label for="player2">Enter your Name</label>
-                 <input type="text" class="form-control" id="player2" place holder="player 2">
-                 </div>
-                 <button class="btn btn-success" id="player" type="submit">Start the game</button>
-                 </form>
-                 </div>
-                 </div>
-                 <div class="col-md=6">
-                     <div class="col-md-3" id="player1-roll">
-                        <h3 id="player1"></h3>
-                        <button class="btn btn-primary" id="die1">Roll!</button>
-                       <button class="btn btn-default" id="hold1">Hold!</button>
+  <!DOCTYPE html>
+  <html>
+   <head>
+  <title>pig-dice</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src ="js/scripts.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  </head>
+  <body>
+  <h3 class="row1">Pig-Dice Gamming</h3>
+  <div class="row2">
+    <form>
+      <label for="player one">Player1</label>
+      <input type="text" id="player1" placeholder="Enter your Name">
+    </form>
+  </div>
+  <div class="row3">
+    <form>
+      <label for="for player two">Player2</label>
+      <input type="text" id="[layer2" placeholder="Enter your Name">
+    </form>
+    <button class="btn btn-success" type="submit">Click to Start</button>
+  </div>
+  <div class="row4">
+    <button class="btn btn-primary">Roll</button>
+    <button class="btn-btn-default">Hold</button>
+  </div>
+  <div class="row5">
+    <button class="btn btn-warning">Roll</button>
+    <button class="btn btn-danger">Hold</button>
+  </div>
+  <div class="row6">
+    <h3>terms and conditions</h3>
+    <ol>
+      <li>If a player gets 1 their score is zero and it becomes the next persorns tern.</li>
+      <li>Any other number is rolled and added to a players score .</li>
+    </ol>
+  </div>
+  <div class="container">
+    <div class="row" id="display">
+      <div class="col-md-4">
+        <div class="display">
+          <h1>outcome</h1>
+          <h2 class="outcome" id="outcome1">0</h2>
+        </div>
+      </div>
 
-                     </div>
-                 </div>
-                 <div class="col-md-3" id="player2-roll">
-                        <h3 id="player2"></h3>
-                        <button class="btn btn-warning" id="die2">Roll!</button>
-                        <button class="btn btn-danger" id="hold2">Hold!</button>
-                      </div>
-                    </div>
-                    <div class="col-md-3" id="rules">
-                      <h2 id="black-rules">Rules:</h2>
-                      <ul>
-                        <li>If a player get's a 1 definately his/her score is zero and it becomes the next person's turn to play.</li>
-                        <li>Any other number is rolled and added to a players score.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="container">
-                        <div class="row" id="display">
-                          <div class="col-md-4">
-                            <div class="display">
-                              <h1>Score</h1>
-                              <h2 class="score" id="score1">0</h2>
-                            </div>
-                          </div>
-                
-                          <div class="col-md-4" id="die-count">
-                            <h4>Die:</h4>
-                            <h2 id="die-count">0</h2>
-                          </div>
-                
-                          <div class="col-md-4">
-                            <div class="display">
-                              <h1>Score</h1>
-                              <h2 class="score" id="score2">0</h2>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                
-              
-        </body>
-    </html>
+      <div class="col-md-4" id="die-count">
+        <h4>Die:</h4>
+        <h2 id="die-count">0</h2>
+      </div>
+
+      <div class="col-md-4">
+        <div class="display">
+          <h1>outcome2</h1>
+          <h2 class="outcome" id="outcome2">0</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>
